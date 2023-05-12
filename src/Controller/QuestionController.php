@@ -74,7 +74,7 @@ class QuestionController extends AbstractController
             $options['form'] = $commentForm->createView();
         }
 
-        return $this->render('question/show.html.twig', ['question' => $question,'form' => $commentForm->createView()]);
+        return $this->render('question/show.html.twig', $options);
     }
 
     #[Route('/question/rating/{id}/{score}', name: 'question_rating')]

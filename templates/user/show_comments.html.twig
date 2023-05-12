@@ -19,9 +19,7 @@
                         <p>{{comment.question.title}}</p>
                         <div class="question-tag">QUESTION</div>
                     </div>
-                    <li class="pb-30">{{ comment.content | slice(0, 100) }} {% if comment.content | length >= 101 %}
-                        ...
-                    {% endif %}</li>
+                    <li class="pb-30">{{ comment.content | slice(0, 100) }} ...</li>
                 </a>
             {% endfor %}
         </ul>
